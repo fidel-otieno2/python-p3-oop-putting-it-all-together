@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import sys
 
 class Book(object):
@@ -18,6 +20,6 @@ class Book(object):
             self._page_count = value
         else:
             sys.stdout.write(u"page_count must be an integer\n")
-
+    
     def turn_page(self):
         sys.stdout.write(u"Flipping the page...wow, you read fast!\n")

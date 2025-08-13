@@ -1,9 +1,16 @@
 #!/usr/bin/env python3
 
-from book import Book
-
-import io
 import sys
+import os
+import io
+
+# Add both possible paths
+root_path = os.path.join(os.path.dirname(__file__), '..', '..')
+lib_path = os.path.join(os.path.dirname(__file__), '..')
+sys.path.insert(0, root_path)
+sys.path.insert(0, lib_path)
+
+from book import Book
 
 class TestBook:
     '''Book in book.py'''
